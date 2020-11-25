@@ -8,9 +8,9 @@
   </head>
 
   <body>
-    <nav>
+    <nav class = "flex1">
 
-    <a href = "index.html"><img src = "https://pngimg.com/uploads/letter_j/letter_j_PNG25.png" style="width:50px;height:50px;"></a>
+    <a href = "index.html"><img src = "https://ak.picdn.net/shutterstock/videos/1012879622/thumb/1.jpg" style="width:65px;height:65px;"></a>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="project.html">Projects</a>
@@ -19,10 +19,18 @@
 
     </nav>
 
-    <header>
-        <h1> Hello, </h1>
-        <p> I'm Josiah, a Singaporean Student who is keen to learn more about the Technology Industry. </p>
-    </header>
+    <section class = "container">
+
+        <header class = "flex2">
+            <h1> Hello, </h1>
+            <p> I'm Josiah, a Singaporean Student who is keen </p>
+            <p>to learn more about the Technology Industry. </p>
+            
+        </header>
+    
+        <img class = "img" src = "https://image.freepik.com/free-photo/desktop-source-code-wallpaper-by-computer-language-with-coding-programming_33771-595.jpg">
+    
+    </section>
 
 
 
@@ -35,7 +43,7 @@
       background-color: white;
     }
     a:link{
-      color: black;
+      color: white;
     }
     a:hover{
       color: blue;
@@ -45,8 +53,28 @@
     }
     a{
       text-decoration: none;
+      padding: 30px;
+    }
+    .img {
+      width: 526px;
+      height: 314px;
     }
 
     /*for flexbox*/
+    .container {
+      display: flex;
+	  width: 100%;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin: 50px;
+      
+    }
+    .flex1 {
+      background-color: black; 
+    }
+    .flex2 { 
+      font-family: Arial;
+      font-size: 24px;
+    }
   </style>
 </html>

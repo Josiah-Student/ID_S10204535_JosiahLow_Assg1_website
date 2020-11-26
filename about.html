@@ -42,22 +42,34 @@
             <hr style="width:100%;text-align:left;margin-left:0">
         </header>
     </section>
-    <div>
-        <div>
-            <p>2010-2015: Henry Park Primary School</p>
-            <img src = "Images/HPPS.jpg" style = "width:65px; height:65px">           
-        </div>
 
-        <div>
-            <p>2016-2019: Gan Eng Seng School</p>
-            <img src = "Images/GESS.jpg" style = "width:115px; height:115px"> 
-        </div>
+    <section class = "con">
+        <article>
+            <h2>Education History</h2>
+            <div>
+                <p>2010-2015: Henry Park Primary School</p>
+                <img src = "Images/HPPS.jpg" style = "width:115px; height:115px">        
+            </div>
 
-        <div>
-            <p>2020-2023: Ngee Ann Polytechnic</p>
-            <img src = "Images/Ngee.png" style = "width:125px; height:125px"> 
-        </div>
-    </div>
+            <div>
+                <p>2016-2019: Gan Eng Seng School</p>
+                <img src = "Images/GESS.jpg" style = "width:115px; height:115px">
+            </div>
+
+            <div>
+                <p>2020-2023: Ngee Ann Polytechnic</p>
+                <img src = "Images/Ngee.png" style = "width:125px; height:125px">
+            </div>
+        </article>
+
+        <article>
+            <h2>Work Experience</h2>
+            <div>
+                <p>2020 Jan - 2020 Apr: Interned at Univac Precision Engineering Pte Ltd</p>
+                <img src ="Images/Univac.png" style = "width:125px; height:125px">
+            </div>
+        </article>
+    </section>
 
 </body>
 
@@ -71,10 +83,10 @@
             color: white;
         }
         a:visited{
-            color: orange;
+            color: white;
         }
         a:hover{
-            color: blue;
+            color: orange;
         }
         a{
             text-decoration: none;
@@ -85,10 +97,9 @@
         /*for flexbox*/
         .container {
           display: flex;
-          width: 100%;
-          
-          
-          
+          width: 100%; 
+          flex-direction: row; 
+               
         }
         .flex1 {
             background-color: black; 
@@ -97,6 +108,17 @@
         .flex2 { 
           font-family: Arial;
           font-size: 18px;          
+        }
+        .con {
+            display: flex;
+            width: 100%; 
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        div{
+            display:flex;
+            width: 100%;
+            flex-direction: row;
         }
     </style>
 

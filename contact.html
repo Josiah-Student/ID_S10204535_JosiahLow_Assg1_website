@@ -15,9 +15,40 @@
         <a href="about.html">About</a>
         <a href="project.html">Projects</a>
         <a href="contact.html">Contact Me</a>
-        
-    
+
     </nav>
+
+    <footer class = "container, flex2">
+        <h1>Contact Me</h1>
+        <form action = "/some-url" method = "POST">
+  
+        <label for = "text">Name:</label>
+        <br>
+        <input class = "textb" type = "text" placeholder="Enter Name here" name = "text" id = "text" required>
+
+        <br>
+
+        <label for = "email">Email Address:</label>
+        <br>
+        <input class = "textb"  type = "email" placeholder="Enter Email here" name = "email" id = "email" required>
+
+        <br>
+        
+        <label for = "msg">Message:</label>
+        <br>
+        <textarea placeholder="Enter your message here" name = "msg" id = "msg" required rows="4" cols="67" style = "border-style: solid; border-radius: 10px;"></textarea>
+        
+        <br>
+
+        <br><br>
+
+        <div class = "button">
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+        
+    </footer>
+
 </body>
 
     <style>
@@ -38,25 +69,27 @@
             text-decoration: none;
             padding: 30px;
         }
-         
+        .textb{
+            width: 500px;
+            height: 30px;
+            border-style: solid;
+            border-radius: 10px;
+        }
 
         /*for flexbox*/
-        /*.container {
-          display: flex;
-          width: 100%;
-          flex-flow: row wrap;
-          justify-content: space-around;
-          margin: 50px;
-          
-        }*/
+        .container {
+            display: flex;
+            width: 100%;
+            flex-direction: column;      
+        }
         .flex1 {
             background-color: black; 
             font-family: Arial;
         }
-        /*.flex2 { 
-          font-family: Arial;
-          font-size: 24px;
-        }*/
+        .flex2 { 
+            font-family: Arial;
+            font-size: 16px;
+        }
     </style>
 
     

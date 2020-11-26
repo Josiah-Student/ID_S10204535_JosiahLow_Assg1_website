@@ -18,37 +18,45 @@
 
     </nav>
 
-    <footer class = "container, flex2">
-        <h1>Contact Me</h1>
-        <form action = "/some-url" method = "POST">
+    <section class = "con">
+        <footer class = "container, flex2">
+            <h1>Contact Me</h1>
+            <form action = "/some-url" method = "POST">
   
-        <label for = "text">Name:</label>
-        <br>
-        <input class = "textb" type = "text" placeholder="Enter Name here" name = "text" id = "text" required>
+            <label for = "text">Name:</label>
+            <br>
+            <input class = "textb" type = "text" placeholder="Enter Name here" name = "text" id = "text" required>
 
-        <br>
+            <br>
 
-        <label for = "email">Email Address:</label>
-        <br>
-        <input class = "textb"  type = "email" placeholder="Enter Email here" name = "email" id = "email" required>
+            <label for = "email">Email Address:</label>
+            <br>
+            <input class = "textb"  type = "email" placeholder="Enter Email here" name = "email" id = "email" required>
 
-        <br>
+            <br>
         
-        <label for = "msg">Message:</label>
-        <br>
-        <textarea placeholder="Enter your message here" name = "msg" id = "msg" required rows="4" cols="67" style = "border-style: solid; border-radius: 10px;"></textarea>
+            <label for = "msg">Message:</label>
+            <br>
+            <textarea placeholder="Enter your message here" name = "msg" id = "msg" required rows="4" cols="67" style = "border-style: solid; border-radius: 10px;"></textarea>
         
-        <br>
+            <br>
 
-        <br><br>
+            <br><br>
 
-        <div class = "button">
-            <input type="submit" value="Submit">
-        </div>
-        </form>
+            <div class = "button">
+                <input type="submit" value="Submit">
+            </div>
+            </form>
         
-    </footer>
+        </footer>
 
+        <aside>
+            <h2>Other ways to contact me:</h2>
+            <p>Email: <a href= "mailto:S10204535@connect.np.edu.sg" style = "color: blue;">S10204535@connect.np.edu.sg</a></p>
+            <p>Instagram: <a href = "https://www.instagram.com/j.low03/" target = "_blank"><img src = "Images/Insta.png" alt = "Instagram" style = "width:35px; height:35px;"></a></p>
+            <p>LinkedIn: <a href = "https://www.linkedin.com/in/low-josiah-7a29821a6/" target = "_blank"><img src = "Images/Link.png" alt = "LinkedIn" style = "width:35px; height:35px;"></a></p>
+        </aside>
+    </section>
 </body>
 
     <style>
@@ -75,13 +83,6 @@
             border-style: solid;
             border-radius: 10px;
         }
-
-        /*for flexbox*/
-        .container {
-            display: flex;
-            width: 100%;
-            flex-direction: column;      
-        }
         .flex1 {
             background-color: black; 
             font-family: Arial;
@@ -89,6 +90,19 @@
         .flex2 { 
             font-family: Arial;
             font-size: 16px;
+        }
+
+        /*for flexbox*/
+        .container {
+            display: flex;
+            width: 100%;
+            flex-direction: column;      
+        }
+        .con{
+            display:flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
         }
     </style>
 

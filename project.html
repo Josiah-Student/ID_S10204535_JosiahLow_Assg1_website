@@ -17,6 +17,23 @@
         <a href="contact.html">Contact Me</a>
     </nav>
 
+    <section>
+        <header class = "flex2">
+            <h1>Projects</h1>
+            <p class = "flex3">Showcase of my current Projects (to be expanded some day)</p>
+            <hr style="width:100%;text-align:left;margin-left:0">
+        </header>
+        <article class = "container">
+            <div>
+                <h2>Univac</h2>
+                <p>I did a small Project during my internship at Univac, 
+                and that was to create a simple loading bar, as seen
+                in the picture.
+                </p>
+            </div>
+            <a href = "https://nyan-cat-loading-bar.jlow03.repl.co/" target = "_blank"><img class = "img" src = "Images/Nyan.png" alt = "nyan"></a>
+        </article>
+    </section>
 </body>
     
 
@@ -41,22 +58,28 @@
          
 
         /*for flexbox*/
-        /*.container {
-          display: flex;
-          width: 100%;
-          flex-flow: row wrap;
-          justify-content: space-around;
-          margin: 50px;
-          
-        }*/
+        .container {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
         .flex1 {
             background-color: black; 
             font-family: Arial;
         }
-        /*.flex2 { 
-          font-family: Arial;
-          font-size: 24px;
-        }*/
+        .flex2 { 
+            font-family: Arial;
+            font-size: 24px;
+        }
+        .flex3{
+            font-family: Arial;
+            font-size: 16px;
+        }
+        .img{
+            width: 453px;
+            height: 246px;
+        }
     </style>
 
 

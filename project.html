@@ -40,7 +40,7 @@
                     complete the Loading Bar.
                 </p>
             </div>
-            <a href = "https://nyan-cat-loading-bar.jlow03.repl.co/" target = "_blank"><img class = "img" src = "Images/Nyan.png" alt = "nyan"></a>
+            <a class = "a" href = "https://nyan-cat-loading-bar.jlow03.repl.co/" target = "_blank"><img class = "img" src = "Images/Nyan.png" alt = "nyan"></a>
         </article>
     </section>
 </body>
@@ -63,6 +63,9 @@
         a{
             text-decoration: none;
             padding: 30px;
+        }
+        .a{
+            display: flex;
         }
         .a2{
             display: none;
@@ -96,7 +99,7 @@
         /* mobile view*/
         @media only screen 
         and (min-device-width: 375px) 
-        and (max-device-width: 812px) 
+        and (max-device-width: 1024px) 
         and (-webkit-min-device-pixel-ratio: 3) {
         body {
             background-color: white;
@@ -115,6 +118,11 @@
             text-decoration: none;
             padding: 30px;
         }
+        .a{
+            display: flex;
+            width: 100%;
+            padding: 0px;
+        }
         .a2{
             display: flex;
             width: 10px; 
@@ -126,8 +134,8 @@
         .container {
             display: flex;
             width: 100%;
-            flex-direction: row;
-            justify-content: space-around;
+            flex-direction: column;
+            
         }
         .flex1 {
             background-color: black; 

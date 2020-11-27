@@ -15,6 +15,7 @@
     <a href="about.html">About</a>
     <a href="project.html">Projects</a>
     <a href="contact.html">Contact Me</a>
+    <a class = "a2" href ="selection.html"><img src = "Images/ham2.png" alt = "menu"></a>
     
 
     </nav>
@@ -50,7 +51,7 @@
             color: orange;
         }
         a{
-            text-decoration: none;
+            text-decoration: none; 
             padding: 30px;
         }
         .img {
@@ -62,6 +63,67 @@
             padding: 0px !important;
             color: orange !important;
             font-size: 16px;
+        }
+        .a2{
+            display: none;
+        }
+        /*for flexbox*/
+        .container {
+            display: flex;
+	        width: 100%;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 50px;
+        }
+        .flex1 {
+            background-color: black; 
+            font-family: Arial;
+        }
+        .flex2 { 
+            font-family: Arial;
+            font-size: 24px;
+        }
+
+
+
+        /* mobile view*/
+        @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 812px) 
+        and (-webkit-min-device-pixel-ratio: 3) {
+        body {
+            background-color: white;
+        }
+        a:link{
+            color: white;
+        }
+        a:visited{
+            color: white;
+        }
+        a:hover{
+            color: orange;
+        }
+        a{
+            display: none;
+            text-decoration: none;
+            padding: 30px;
+        }
+        .img {
+            display: none;
+            width: 526px;
+            height: 314px;
+        }
+        .a{
+            display: block;
+            text-decoration: none;
+            padding: 0px !important;
+            color: orange !important;
+            font-size: 16px;
+        }
+        .a2{
+            display: flex;
+            width: 10px; 
+            height: 25px;
         }
         /*for flexbox*/
         .container {
@@ -79,6 +141,8 @@
         .flex2 { 
             font-family: Arial;
             font-size: 24px;
+        }
+
         }
     </style>
 
